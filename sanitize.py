@@ -18,5 +18,7 @@ class SanitizeCommand(sublime_plugin.TextCommand):
     # content = content.replace(' ', ' ')
     # content = content.replace('“', '"')
     # content = content.replace('”', '"')
+    # content = content.replace('…', '...')
+    # content = content.replace('–', '-')
     
     self.view.replace(edit, region, content)
